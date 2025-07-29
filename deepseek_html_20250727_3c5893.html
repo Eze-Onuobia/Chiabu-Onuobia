@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Chiabu Onuobia Law Firm - Dedicated to justice with expertise in criminal defense, civil litigation, and corporate law.">
+<title>Chiabu Onuobia & Associates - Law Firm</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --primary-color: #1a1a2e;
+    --secondary-color: #e94560;
+    --accent-color: #0f3460;
+    --light-color: #f4f7f9;
+    --text-color: #222;
+    --text-light: #555;
+    --white: #fff;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+
+  header.scrolled {
+    padding: 15px 40px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+  }
+
+  .logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+
+  .logo-text span {
+    color: var(--secondary-color);
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header nav ul li {
+    margin-left: 30px;
+    position: relative;
+  }
+
+  header nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1.05rem;
+  }
+
+  header nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+
+  header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  header nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  main {
+    margin-top: 90px;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color), #2c5364);
+    color: var(--white);
+    padding: 140px 20px 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+    background-size: cover;
+    opacity: 0.1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin: 0 auto 40px;
+    max-width: 700px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--white);
+  }
+
+  .btn-primary:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    margin-left: 15px;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+  }
+
+  section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    display: inline-block;
+  }
+
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-color);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+
+  /* About section */
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-img {
+    flex: 1 1 320px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .about-img:hover {
+    transform: scale(1.02);
+  }
+
+  .about-content {
+    flex: 2 1 400px;
+  }
+
+  .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+
+  .about-content p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+  }
+
+  .expertise-list {
+    margin-top: 30px;
+  }
+
+  .expertise-list h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+
+  .expertise-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .expertise-item {
+    background: rgba(233, 69, 96, 0.1);
+    color: var(--secondary-color);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* Work showcase */
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .work-card {
+    background: var(--white);
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--secondary-color);
+    transition: height 0.3s ease;
+  }
+
+  .work-card:hover::before {
+    height: 100%;
+  }
+
+  .work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+  .work-card h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    position: relative;
+    padding-left: 15px;
+  }
+
+  .work-card h3::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+  }
+
+  .work-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 80px 40px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonials::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 120px;
+    color: rgba(255,255,255,0.1);
+    font-family: serif;
+    line-height: 1;
+  }
+
+  .testimonial-slide {
+    display: none;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .testimonial-slide.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .testimonial-slide p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    position: relative;
+  }
+
+  .testimonial-slide p::before,
+  .testimonial-slide p::after {
+    content: '"';
+    font-size: 24px;
+    color: rgba(255,255,255,0.5);
+    vertical-align: top;
+    line-height: 0;
+  }
+
+  .testimonial-slide p::before {
+    margin-right: 5px;
+  }
+
+  .testimonial-slide p::after {
+    margin-left: 5px;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+  }
+
+  .author-info h4 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .author-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .testimonial-controls {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .testimonial-dots {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .dot.active {
+    background: var(--white);
+  }
+
+  .testimonial-btn {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-btn:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+  }
+
+  /* Contact form */
+  .contact-form {
+    max-width: 700px;
+    margin: 0 auto 80px;
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .contact-form h2 {
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .contact-form input, 
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    font-size: 1rem;
+    resize: vertical;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.2);
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 16px;
+    background: var(--secondary-color);
+    color: var(--white);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .contact-form button:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+  }
+
+  /* Success message */
+  .success-message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #27ae60;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--primary-color);
+    color: #ccc;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: left;
+  }
+
+  .footer-column h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .footer-column h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+  }
+
+  .footer-column p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .contact-icon {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-top: 3px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-link {
+    color: var(--white);
+    background: rgba(255,255,255,0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .social-link:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+  }
+
+  .copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+  }
+
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--secondary-color);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top:hover {
+    background: var(--accent-color);
+    transform: translateY(-3px);
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 15px 20px;
+    }
+    
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    header nav ul {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background: var(--primary-color);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      transition: left 0.3s ease;
+    }
+    
+    header nav ul.active {
+      left: 0;
+    }
+    
+    header nav ul li {
+      margin: 0;
+    }
+    
+    .hero {
+      padding: 100px 20px 80px;
+    }
+    
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+    
+    .btn-secondary {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    
+    .testimonials {
+      padding: 60px 20px;
+    }
+    
+    .testimonial-slide p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .logo-text {
+      font-size: 1.2rem;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .section-title h2 {
+      font-size: 2rem;
+    }
+    
+    .contact-form {
+      padding: 30px 20px;
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header id="header">
+  <nav>
+    <div class="logo-container">
+      <img src="chiabu-o.jpg" alt="Chiabu Onuobia" class="logo-img">
+      <div class="logo-text">Chiabu Onuobia <span>& Associates</span></div>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Practice Areas</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Expert Legal Representation You Can Trust</h1>
+      <p>With over 15 years of experience, Chiabu Onuobia & Associates provides exceptional legal services tailored to your unique needs.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+        <a href="tel:+1234567890" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About Our Firm</h2>
+    </div>
+    <div class="about">
+      <img src="https://i.imgur.com/Blz8k9L.jpg" alt="Chiabu Onuobia in court" class="about-img">
+      <div class="about-content">
+        <h2>Chiabu Onuobia, Esq.</h2>
+        <p>Principal Attorney Chiabu Onuobia is a distinguished legal practitioner renowned for his meticulous approach to complex cases and unwavering commitment to justice. A graduate of Harvard Law School, Chiabu has been practicing law for over 15 years with a proven track record of successful outcomes.</p>
+        <p>His practice philosophy centers on personalized attention, strategic thinking, and aggressive advocacy when needed. Clients appreciate his ability to explain complex legal concepts in understandable terms while maintaining the highest standards of professional excellence.</p>
+        
+        <div class="expertise-list">
+          <h3>Areas of Expertise:</h3>
+          <div class="expertise-items">
+            <span class="expertise-item">Criminal Defense</span>
+            <span class="expertise-item">Civil Litigation</span>
+            <span class="expertise-item">Corporate Law</span>
+            <span class="expertise-item">Family Law</span>
+            <span class="expertise-item">Real Estate</span>
+            <span class="expertise-item">Intellectual Property</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-title">
+      <h2>Our Practice Areas</h2>
+    </div>
+    <div class="work-grid">
+      <div class="work-card">
+        <h3>Criminal Defense</h3>
+        <p>Comprehensive defense strategies for all criminal charges from misdemeanors to serious felonies, ensuring your rights are protected at every stage.</p>
+      </div>
+      <div class="work-card">
+        <h3>Civil Litigation</h3>
+        <p>Effective representation in disputes involving contracts, personal injury, property, and other civil matters with a focus on favorable resolutions.</p>
+      </div>
+      <div class="work-card">
+        <h3>Corporate Law</h3>
+        <p>Guidance through business formation, contracts, compliance, mergers and acquisitions to help your business thrive while mitigating risks.</p>
+      </div>
+      <div class="work-card">
+        <h3>Family Law</h3>
+        <p>Compassionate handling of sensitive family matters including divorce, child custody, adoption, and prenuptial agreements.</p>
+      </div>
+      <div class="work-card">
+        <h3>Real Estate</h3>
+        <p>Expert assistance with transactions, zoning issues, landlord-tenant disputes, and property development matters.</p>
+      </div>
+      <div class="work-card">
+        <h3>Intellectual Property</h3>
+        <p>Protection for your creative works, inventions, and brands through patents, trademarks, copyrights, and licensing agreements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="testimonial-slide active">
+      <p>Chiabu Onuobia provided excellent legal counsel and fought tirelessly for my rights during a complex business dispute. His attention to detail and strategic thinking resulted in a settlement that exceeded my expectations.</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah M." class="author-img">
+        <div class="author-info">
+          <h4>Sarah M.</h4>
+          <p>Business Owner</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-slide">
+      <p>Professional, knowledgeable, and compassionate — Chiabu's expertise was critical to winning my case. He kept me informed throughout the entire process and made sure I understood all my options.</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James L." class="author-img">
+        <div class="author-info">
+          <h4>James L.</h4>
+          <p>Real Estate Developer</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-slide">
+      <p>A top-notch attorney who truly cares about his clients and delivers results beyond expectations. When I was facing serious charges, Chiabu built a defense that resulted in all charges being dropped.</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Rebecca T." class="author-img">
+        <div class="author-info">
+          <h4>Rebecca T.</h4>
+          <p>Client</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-controls">
+      <button class="testimonial-btn" onclick="changeTestimonial(-1)"><i class="fas fa-chevron-left"></i></button>
+      <button class="testimonial-btn" onclick="changeTestimonial(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="testimonial-dots">
+      <span class="dot active" onclick="goToTestimonial(0)"></span>
+      <span class="dot" onclick="goToTestimonial(1)"></span>
+      <span class="dot" onclick="goToTestimonial(2)"></span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Contact Our Firm</h2>
+    <form id="contactForm" onsubmit="return submitForm(event)">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required placeholder="Your Full Name">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="(123) 456-7890">
+      </div>
+      
+      <div class="form-group">
+        <label for="service">Service Needed</label>
+        <select id="service">
+          <option value="">Select a service</option>
+          <option value="criminal">Criminal Defense</option>
+          <option value="civil">Civil Litigation</option>
+          <option value="corporate">Corporate Law</option>
+          <option value="family">Family Law</option>
+          <option value="real-estate">Real Estate</option>
+          <option value="ip">Intellectual Property</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="6" required placeholder="Please describe your legal needs..."></textarea>
+      </div>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+    <div id="successMessage" class="success-message">
+      <i class="fas fa-check-circle"></i> Thank you for your message! We'll contact you within 24 hours.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>About Our Firm</h3>
+      <p>Chiabu Onuobia & Associates is dedicated to providing exceptional legal services with integrity, professionalism, and personalized attention to each client's unique needs.</p>
+    </div>
+    
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul style="list-style: none;">
+        <li><a href="#about" style="color: #ccc; text-decoration: none;">About Us</a></li>
+        <li><a href="#work" style="color: #ccc; text-decoration: none;">Practice Areas</a></li>
+        <li><a href="#testimonials" style="color: #ccc; text-decoration: none;">Client Testimonials</a></li>
+        <li><a href="#contact" style="color: #ccc; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h3>Contact Info</h3>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span>123 Legal Avenue, Suite 500<br>New York, NY 10001</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="fas fa-phone"></i></span>
+          <span>(212) 555-1234</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+          <span>info@chiabuonulaw.com</span>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    &copy; 2025 Chiabu Onuobia & Associates. All Rights Reserved.
+  </div>
+</footer>
+
+<div class="back-to-top" id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const navMenu = document.getElementById('navMenu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+      ? '<i class="fas fa-times"></i>' 
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  // Close mobile menu when clicking a link
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  });
+
+  // Header scroll effect
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Smooth scroll for all links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target) {
+        window.scrollTo({
+          top: target.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Back to top button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Testimonials slider logic
+  let currentTestimonial = 0;
+  const testimonials = document.querySelectorAll('.testimonial-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showTestimonial(index) {
+    testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    currentTestimonial = index;
+    testimonials[currentTestimonial].classList.add('active');
+    dots[currentTestimonial].classList.add('active');
+  }
+
+  function changeTestimonial(direction) {
+    let newIndex = currentTestimonial + direction;
+    if(newIndex < 0) newIndex = testimonials.length - 1;
+    if(newIndex >= testimonials.length) newIndex = 0;
+    showTestimonial(newIndex);
+  }
+
+  function goToTestimonial(index) {
+    showTestimonial(index);
+  }
+
+  // Auto-rotate testimonials
+  let testimonialInterval = setInterval(() => {
+    changeTestimonial(1);
+  }, 5000);
+
+  // Pause auto-rotation when hovering
+  const testimonialContainer = document.querySelector('.testimonials');
+  testimonialContainer.addEventListener('mouseenter', () => {
+    clearInterval(testimonialInterval);
+  });
+
+  testimonialContainer.addEventListener('mouseleave', () => {
+    testimonialInterval = setInterval(() => {
+      changeTestimonial(1);
+    }, 5000);
+  });
+
+  // Contact form submission
+  function submitForm(event) {
+    event.preventDefault();
+    const form = event.target;
+    const successMessage = document.getElementById('successMessage');
+    
+    // Simulate form submission
+    setTimeout(() => {
+      form.reset();
+      form.style.display = 'none';
+      successMessage.style.display = 'block';
+      
+      // Reset after 5 seconds (for demo)
+      setTimeout(() => {
+        form.style.display = 'block';
+        successMessage.style.display = 'none';
+      }, 5000);
+    }, 1000);
+    
+    return false;
+  }
+
+  // Initialize
+  document.addEventListener('DOMContentLoaded', () => {
+    // Check if we're at the top to set header class
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
